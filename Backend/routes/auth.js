@@ -1,7 +1,7 @@
-import express from 'express';
 import bcrypt from 'bcryptjs';
+import express from 'express';
 import jwt from 'jsonwebtoken';
-import User from '../models/User';
+import User from '../models/User.js';
 
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET;
@@ -37,8 +37,8 @@ router.post('/login', async(req, res) => {
         res.status(200).json({ token, user: { id: user._id, username: user.username } });
 
     } catch (err) {
-        res.status(500).json({ error: rr.message });
+        res.status(500).json({ error: err.message });
     }
 });
 
-module.exports = router;
+export default router;

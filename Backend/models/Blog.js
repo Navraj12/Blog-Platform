@@ -9,4 +9,5 @@ const BlogSchema = new mongoose.Schema({
         default: Date.now
     },
 });
-module.exports = mongoose.model('Blog', BlogSchema);
+const Blog = mongoose.model('Blog', BlogSchema);
+export default Blog;
