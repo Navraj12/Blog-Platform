@@ -1,4 +1,4 @@
-<h1>A blog platform is a web-based application or system designed to enable users to create, manage, and share blog content. Here are the primary tasks and features of a blog platform:
+A blog platform is a web-based application or system designed to enable users to create, manage, and share blog content. Here are the primary tasks and features of a blog platform:
 
 1. User Authentication and Authorization
 Sign-up/Sign-in: Allow users to register and log in securely using credentials or third-party services (e.g., Google, Facebook).
@@ -33,4 +33,4 @@ Ensure the platform is optimized for both desktop and mobile devices for a seaml
 10. Optional Features
 Social Sharing: Allow users to share posts on social media platforms.
 SEO Optimization: Implement features to improve search engine rankings for blog posts.
-Monetization: Enable ads or subscription options for revenue generation.</h1>
+Monetization: Enable ads or subscription options for revenue generation.
