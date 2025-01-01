@@ -22,10 +22,7 @@ if (!MONGO_URI) {
     process.exit(1); // Exit the process if MONGO_URI is not defined
 }
 
-connect(MONGO_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+connect(MONGO_URI)
     .then(() => console.log('Connected to MongoDB'))
     .catch((err) => {
         console.error('Error connecting to MongoDB:', err.message);
