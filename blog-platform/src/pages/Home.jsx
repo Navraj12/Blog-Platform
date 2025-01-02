@@ -5,9 +5,14 @@ import { createBlog, deleteBlog, getBlogs } from "../services/api";
 function Home() {
   const [blogs, setBlogs] = useState([]);
   const [token, setToken] = useState(localStorage.getItem("token"));
+
   const fetchBlogs = async () => {
-    const response = await getBlogs();
-    setBlogs(response.data);
+    try {
+      const response = await getBlogs();
+      setBlogs(response.data);
+    } catch (error) {
+      console.error("Error fetching blogs:", error.message);
+    }
   };
 
   useEffect(() => {
@@ -15,20 +20,38 @@ function Home() {
   }, []);
 
   const handleCreateBlog = async (newBlog) => {
-    await createBlog(newBlog, token);
-    fetchBlogs();
+    try {
+      await createBlog(newBlog, token);
+      fetchBlogs();
+    } catch (error) {
+      console.error("Error creating blog:", error.message);
+    }
   };
 
   const handleDeleteBlog = async (id) => {
-    await deleteBlog(id, token);
-    fetchBlogs();
+    try {
+      await deleteBlog(id, token);
+      fetchBlogs();
+    } catch (error) {
+      console.error("Error deleting blog:", error.message);
+    }
   };
 
   return (
     <div>
       <h1>Blogs</h1>
       {token && <BlogForm onSubmit={handleCreateBlog} />}
-      <BlogForm blogs={blogs} onDelete={handleDeleteBlog} />
+      <div>
+        {blogs.map((blog) => (
+          <div key={blog._id}>
+            <h2>{blog.title}</h2>
+            <p>{blog.content}</p>
+            {token && (
+              <button onClick={() => handleDeleteBlog(blog._id)}>Delete</button>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

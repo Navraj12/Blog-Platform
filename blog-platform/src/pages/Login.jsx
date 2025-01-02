@@ -14,6 +14,8 @@ function Login() {
       localStorage.setItem("token", `Bearer ${response.data.token}`);
       navigate("/");
     } catch (error) {
+      // console.log(data); // Before sending the request
+
       console.error("Login failed:", error);
     }
   };

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useState } from "react";
 
 function BlogForm({ onSubmit }) {
@@ -25,5 +26,8 @@ function BlogForm({ onSubmit }) {
     </form>
   );
 }
+BlogForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired, // Validate that onSubmit is a required function
+};
 
 export default BlogForm;

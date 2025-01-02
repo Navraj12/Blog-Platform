@@ -2,16 +2,19 @@ import dotenv from 'dotenv';
 import express from 'express';
 import { connect } from 'mongoose';
 
+import cors from "cors";
 import authRoutes from './routes/auth.js';
 import blogRoutes from './routes/blogs.js';
+
 
 dotenv.config(); // Load environment variables
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 
 // Middleware
+app.use(cors()); // Allow requests from all origins
 app.use(express.json()); // To parse JSON request bodies
 app.use('/api/auth', authRoutes);
 app.use('/api/blogs', blogRoutes);
