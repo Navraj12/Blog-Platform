@@ -18,6 +18,10 @@ app.use(cors()); // Allow requests from all origins
 app.use(express.json()); // To parse JSON request bodies
 app.use('/api/auth', authRoutes);
 app.use('/api/blogs', blogRoutes);
+app.use(express.json()); // For JSON payloads
+app.use(express.urlencoded({ extended: true })); // For form submissions
+
+
 
 // Database Connection
 if (!MONGO_URI) {
