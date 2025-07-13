@@ -96,6 +96,14 @@ Frontend deployed on Vercel
 Backend deployed on Render
 
 ```
+<img width="1891" height="879" alt="{B74EC811-750D-4AEE-BA8A-9B628BDDC2E0}" src="https://github.com/user-attachments/assets/b2a3e9e1-eb1c-4070-a0d6-2f016328ad30" />,
+<img width="1873" height="879" alt="{C2B1F880-0F49-4B31-9795-F406CE9C7E2C}" src="https://github.com/user-attachments/assets/62ed7500-6697-49ea-9ba6-19d267906995" />,
+<img width="1882" height="881" alt="{03A3F888-DFFA-4E66-AFCD-E979FE1E90EA}" src="https://github.com/user-attachments/assets/04cc4725-05f7-4060-b95a-023c0a1f8ad4" />,
+<img width="1904" height="876" alt="{19B08198-2ACE-4136-BEA2-E839565262E9}" src="https://github.com/user-attachments/assets/0ad21f83-26df-41ef-a380-b44a85c4f44c" />
+
+
+
+
 
 ##🙋‍♂️ Author
 
