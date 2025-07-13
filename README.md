@@ -1,3 +1,4 @@
+# Blog-Platform 🎓
 A blog platform is a web-based application or system designed to enable users to create, manage, and share blog content. Here are the primary tasks and features of a blog platform:
 
 1. User Authentication and Authorization
@@ -34,3 +35,70 @@ Ensure the platform is optimized for both desktop and mobile devices for a seaml
 Social Sharing: Allow users to share posts on social media platforms.
 SEO Optimization: Implement features to improve search engine rankings for blog posts.
 Monetization: Enable ads or subscription options for revenue generation.
+
+## 🔗 Live Demo
+
+🌐 [Visit Blog-Platform](https://blog-platform-eight-wheat.vercel.app/)
+
+---
+
+## 🧰 Tech Stack
+
+**Frontend:**
+- React
+- Axios
+- React Router
+- React Hot Toast
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
+- JSON Web Tokens (JWT)
+- Bcrypt.js
+
+---
+
+## 🚀 Features
+
+- User registration and login (with JWT authentication)
+- Secure password hashing
+- Create, read, update, and delete blog posts
+- Responsive frontend built with React
+- Private routes for authenticated users
+- RESTful API for blog management
+- Toast notifications for user actions
+
+  
+## 📁 Project Structure
+<img width="312" height="798" alt="{DBF08114-C3F6-4658-9377-06ADC3A457A5}" src="https://github.com/user-attachments/assets/26c3752a-319f-49a9-a39c-270b21e02ea5" />
+
+
+## 🚀 Getting Started Locally
+
+1. Clone the repository
+```bash
+git clone https://github.com/Navraj12/Blog-Platform.git
+
+2. Start the Backend
+cd Backend
+npm install
+npm start
+ 
+3. Start the Frontend
+cd Frontend
+npm install
+npm run dev
+
+📦 Deployment
+Frontend deployed on Vercel
+
+Backend deployed on Render
+
+```
+
+##🙋‍♂️ Author
+
+🌐 [Developed by Navraj Awasthi](https://github.com/Navraj12)
+
+
